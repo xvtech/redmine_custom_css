@@ -1,6 +1,6 @@
 # Redmine Custom CSS plugin
 
-Allows to input CSS directly from Redmine to customize Redmine appearance.
+Allows to input CSS directly from Redmine to customize Redmine appearance.\
 Edit the CSS in the plugin's configuration page. Path to configuration is /settings/plugin/redmine_custom_css
 
 Please note that there is nothing for now to prevent an admin injecting HTML in the page!
@@ -12,10 +12,11 @@ Please note that there is nothing for now to prevent an admin injecting HTML in 
 
 ## Compatibility
 
-Redmine 2.x ~ 3.x stable
+Redmine 2.x ~ 4.x stable
 
 Tested on:
-* 3.4.x
+* 4.2.x (Rails 6.1)
+* 3.4.x (this and prior - branch Redmine_3x)
 * 3.3.x
 * 3.0.3
 * 2.5.0
@@ -23,14 +24,17 @@ Tested on:
 
 ## Roadmap
 
-* Maybe implement file upload to add images.
-* Give an option to publish the CSS as a file and not inlined in the HTML.
 
 ## Downloading and installing the plugin
 
 Download the plugin using git. Open a terminal in your Redmine installation's "plugins" directory and type:
 
-<tt>git clone https://github.com/martin-denizet/redmine_custom_css.git</tt>
+>$ git clone https://github.com/martin-denizet/redmine_custom_css.git
+
+If you use Rails prior 6.1 switch to the branch Redmine_3x.
+
+>$ git fetch\
+>$ git checkout Redmine_3x
 
 The installation is now finished and you will be able to use the plugin after you restart your Redmine instance.
 
@@ -46,6 +50,9 @@ Thank to CodeMirror for their very cool editor licensed under MIT license! http:
 
 ## Contributors
 
+* Eduard Kuleshov : Coding
+
+Previous contibutors:
 * @martin-denizet : Coding
 * @onlyjob : Licensing expertise
 * @virtualmarc : Bugfix
@@ -53,13 +60,15 @@ Thank to CodeMirror for their very cool editor licensed under MIT license! http:
 
 ## License TL;DR
 
-GPLv3+
+GPLv3+\
+Copyright (C) 2021 Eduard Kuleshov <eduard.kuleshov@gmail.com>\
 Copyright (C) 2018 Martin DENIZET <martin.denizet@supinfo.com>
 
 ## License
 
 redmine_custom_css - "redmine_custom_css" is Redmine plugin to add custom CSS
-editable through web interface
+editable through web interface\
+Copyright (C) 2021 Eduard Kuleshov <eduard.kuleshov@gmail.com>\
 Copyright (C) 2018 Martin DENIZET <martin.denizet@supinfo.com>
 
 This file is part of redmine_custom_css.

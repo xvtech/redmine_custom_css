@@ -1,6 +1,8 @@
 #
 # redmine_custom_css - "redmine_custom_css" is Redmine plugin to add custom CSS
 # editable through web interface
+#
+# Copyright (C) 2021 Eduard Kuleshov <eduard.kuleshov@gmail.com>
 # Copyright (C) 2015 Martin DENIZET <martin.denizet@supinfo.com>
 #
 # This file is part of redmine_custom_css.
@@ -18,15 +20,15 @@
 # You should have received a copy of the GNU General Public License
 # along with redmine_custom_css.  If not, see <http://www.gnu.org/licenses/>.
 #
-require_dependency 'hooks'
+#require_dependency 'redmine_custom_css/redmine_custom_css_hook_listener'
 
 Redmine::Plugin.register :redmine_custom_css do
   name 'Redmine Custom CSS plugin'
-  author 'Martin DENIZET'
+  author 'Eduard Kuleshov'
   description 'Allows to customize Redmine\'s CSS'
-  version '0.1.7'
-  url 'https://github.com/martin-denizet/redmine_custom_css'
-  author_url 'http://martin-denizet.com'
+  version '0.1.8'
+  url 'https://github.com/Dikoy/redmine_custom_css'
+  author_url 'https://github.com/Dikoy/'
 
 
   settings :default => {
